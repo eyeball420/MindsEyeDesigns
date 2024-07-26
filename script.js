@@ -17,12 +17,12 @@ function showSlides() {
 
 function showSlides1() {
   let i;
-  let slides = document.getElementsByClassName("mySlides2");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  let slides1 = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";  
   }
   slideIndex1++;
-  if (slideIndex1 > slides.length) {slideIndex1 = 1}    
-  slides[slideIndex1-1].style.display = "block";  
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+  slides1[slideIndex1-1].style.display = "block";  
   setTimeout(showSlides1, 3000); // Change image every 3 seconds
 }
