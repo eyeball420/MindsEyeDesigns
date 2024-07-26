@@ -7,7 +7,7 @@ body {font-family: Arial, sans-serif; margin:0; padding: 20px; background-color:
   max-width: 1000px;
 }
 
-.mySlides {
+.mySlides, .mySlides2 {
   display: none;
 }
 
