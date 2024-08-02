@@ -26,3 +26,12 @@ function showSlides1() {
   slides1[slideIndex1-1].style.display = "block";  
   setTimeout(showSlides1, 3000); // Change image every 3 seconds
 }
+
+function navigate() {
+  console.log("navigate function called");
+    const select = document.getElementById('sectionSelect');
+  const section = select.value;
+  if (section) {
+    window.location.href = section;
+  }
+}
