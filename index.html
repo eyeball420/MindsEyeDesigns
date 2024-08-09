@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jewelry Slideshow</title>
   <link rel="stylesheet" href="styles.css">
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "w40LRPwthxlxUpmOu",
+      });
+   })();
+   </script>
+   <script type="text/javascript">
+   emailjs.send('service_lwtjr7d', 'template_uz47ivd', {
+    name: 'Test Name',
+    email: 'test@example.com',
+    message: 'This is a test message'
+}).then(function(response) {
+    console.log('SUCCESS!', response.status, response.text);
+    alert('Test email sent successfully!');
+}, function(error) {
+    console.log('FAILED...', error);
+    alert('There was an error sending the test email.');
+});
+</script>
 </head>
 <body>
   <nav>
